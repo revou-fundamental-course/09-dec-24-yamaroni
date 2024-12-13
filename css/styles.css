@@ -1,1 +1,65 @@
 /* Ini Css */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav>a {
+    border: 1px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.banner-img {
+    height: 320px;
+    background-image: url(https://picsum.photos/750);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-header {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 24px;
+}
+
+.main-item {
+    flex: 1;
+}
+
+form {
+    background-color: aliceblue;
+}
+
+.our-packages-header {
+    background-color: aliceblue;
+    margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+footer {
+    margin-top: 24px;
+    text-align: center;
+}
