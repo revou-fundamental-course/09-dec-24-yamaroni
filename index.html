@@ -13,9 +13,9 @@
         <div class="home-icon"></div>
 
         <nav>
-            <a href="#">Home</a>
+            <a href="#home-section">Home</a>
             <a href="#our-package-section">Our Packages</a>
-            <a href="#">Call Us</a>
+            <a href="#call-us-section">Call Us</a>
         </nav>
     </header>
 
@@ -25,17 +25,24 @@
         <header class="content-header">
             <h1>Your Trusted Travel Agent</h1>
             <h3>Your Happiness is Our Happiness</h3>
+            <h3 id="username-result"></h3>
         </header>
 
         <!-- Home Content -->
-        <section class="main-container">
+        <section class="main-container" id="home-section">
             <!-- Banner AutoSlide Content -->
             <aside class="main-item">
-                <div class="banner-img"></div>
+                <div class="banner-img banner-1"></div>
+                <div class="banner-img banner-2"></div>
+                <div class="banner-img banner-3"></div>
             </aside>
 
             <!-- Form Contact Us -->
-            <form class="main-item"></form>
+            <form class="main-item">
+                <label for="username-input">Username:</label>
+                <input type="text" id="username-input" required />
+                <button type="button" id="submit-btn" onclick="validateForm();">Submit</button>
+            </form>
         </section>
 
         <!-- Our Packages Content -->
@@ -43,12 +50,25 @@
             <header class="content-header our-packages-header">
                 <h1>Our Packages</h1>
             </header>
+
+            <article class="content"></article>
+        </section>
+
+        <!-- Call Us Content -->
+        <section id="call-us-section">
+            <header class="content-header our-packages-header">
+                <h1>Call Us</h1>
+            </header>
+
+            <article class="content"></article>
         </section>
     </main>
 
     <footer>
         <span>Made by Yama@2024</span>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
